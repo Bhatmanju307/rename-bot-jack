@@ -13,9 +13,9 @@ logging.basicConfig(
 from dotenv import load_dotenv
 load_dotenv()
 class Config(object):
-    API_ID = int(os.environ.get("API_ID", "8813038"))
-    API_HASH = os.environ.get("API_HASH", "780fd96b159baa710dada78ff1621b54")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5773205742:AAFSygtZMc_9ow_miS4sWmn5Rw0vQZMdoOc")
+    API_ID = int(os.environ.get("API_ID", ""))
+    API_HASH = os.environ.get("API_HASH", "")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
     DOWNLOAD_DIR = os.environ.get("DOWNLOAD_DIR", "./downloads")
     LOGGER = logging
     OWNER_ID = int(os.environ.get("OWNER_ID", 2083503061))
